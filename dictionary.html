@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<script>
+    var eng = ['Apple', 'Orange', 'Table', 'Chair', 'Government', 'Teacher', 'Student', 'Element', 'Awesome'] ;
+    var viet = ['Quả táo', 'Quả cam', 'Cái bàn', 'Cái ghế', 'Chính phủ', 'Giáo viên', 'Sinh viên', 'Phần tử', 'Tuyệt vời'];
+    var lookup = prompt("Enter word you wanna look up in dictionary: ");
+    var found = false;
+    for(let i = 0, l = eng.length; i < l && !found; i++) {
+        if (lookup == eng[i]) {
+            found = true;
+            alert(viet[i]);
+        }
+    }
+    if (found == false) {
+        alert("Couldn't find that word");
+    }
+</script>
+</body>
+</html>
